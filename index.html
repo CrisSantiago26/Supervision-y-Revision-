@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7fb">
+  <meta name="description" content="Mapa conceptual interactivo sobre la supervisión y revisión de proyectos bajo Scrum.">
+  <title>Supervisión y revisión del proyecto | Scrum</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <div>
+      <p class="eyebrow">MAPA CONCEPTUAL · MARCO DE TRABAJO SCRUM</p>
+      <h1>Supervisión y revisión del proyecto</h1>
+      <p class="intro">Cómo inspeccionar el avance y adaptar el trabajo para entregar valor, sprint tras sprint.</p>
+    </div>
+    <div class="toolbar" aria-label="Controles del mapa">
+      <button class="button button-secondary" id="toggle-details" type="button">Mostrar todos los detalles</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="map" id="concept-map" aria-labelledby="map-title">
+      <h2 class="visually-hidden" id="map-title">Mapa conceptual de supervisión y revisión en Scrum</h2>
+      <svg class="connections" aria-hidden="true"></svg>
+
+      <div class="root-wrap">
+        <article class="root-node" id="root-node">
+          <span class="root-icon" aria-hidden="true">↻</span>
+          <div>
+            <p class="node-kicker">CICLO DE INSPECCIÓN Y ADAPTACIÓN</p>
+            <h2>Supervisión y revisión del proyecto en Scrum</h2>
+            <p>Se realizan de forma continua para comprobar el progreso, aprender y ajustar el rumbo.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="branches">
+        <article class="branch branch-blue" id="branch-inspection">
+          <div class="branch-heading">
+            <span class="branch-number">01</span>
+            <div>
+              <p class="node-kicker">SEGUIMIENTO CONTINUO</p>
+              <h3>Supervisión del trabajo</h3>
+            </div>
+          </div>
+          <p class="branch-summary">El equipo inspecciona el progreso hacia el Objetivo del Sprint y hace visible el trabajo.</p>
+          <div class="concept-list">
+            <div class="concept"><strong>Daily Scrum</strong><span>Revisa el avance y adapta el plan de las próximas 24 horas.</span></div>
+            <div class="concept"><strong>Tablero del Sprint</strong><span>Muestra el estado del trabajo y posibles bloqueos.</span></div>
+            <div class="concept"><strong>Responsabilidad compartida</strong><span>Developers actualizan el plan; Scrum Master ayuda a eliminar impedimentos.</span></div>
+          </div>
+          <button class="details-button" type="button" aria-expanded="false">¿Qué se observa? <span aria-hidden="true">＋</span></button>
+          <div class="details" hidden>
+            <p>El Daily Scrum es un evento para Developers, no una reunión de reporte al Scrum Master. La inspección frecuente permite detectar desviaciones temprano, sin confundir actividad con valor entregado.</p>
+          </div>
+        </article>
+
+        <article class="branch branch-green" id="branch-review">
+          <div class="branch-heading">
+            <span class="branch-number">02</span>
+            <div>
+              <p class="node-kicker">AL FINAL DEL SPRINT</p>
+              <h3>Sprint Review</h3>
+            </div>
+          </div>
+          <p class="branch-summary">Scrum Team y stakeholders inspeccionan el resultado y conversan sobre qué hacer después.</p>
+          <div class="concept-list">
+            <div class="concept"><strong>Inspeccionar el Incremento</strong><span>Se presenta el trabajo terminado que cumple la Definición de Terminado.</span></div>
+            <div class="concept"><strong>Colaborar</strong><span>Se revisan cambios del mercado, oportunidades y necesidades.</span></div>
+            <div class="concept"><strong>Adaptar el Product Backlog</strong><span>El Product Owner puede ajustar prioridades con lo aprendido.</span></div>
+          </div>
+          <button class="details-button" type="button" aria-expanded="false">¿Para qué sirve? <span aria-hidden="true">＋</span></button>
+          <div class="details" hidden>
+            <p>Es una sesión de trabajo, no solo una demostración ni una aprobación formal. Su resultado es una conversación sobre el progreso hacia el Product Goal y las posibles adaptaciones futuras.</p>
+          </div>
+        </article>
+
+        <article class="branch branch-purple" id="branch-evidence">
+          <div class="branch-heading">
+            <span class="branch-number">03</span>
+            <div>
+              <p class="node-kicker">EVIDENCIA TRANSPARENTE</p>
+              <h3>Artefactos e indicadores</h3>
+            </div>
+          </div>
+          <p class="branch-summary">La información visible y actualizada permite tomar decisiones basadas en hechos.</p>
+          <div class="concept-list">
+            <div class="concept"><strong>Product Backlog</strong><span>Ordena el trabajo pendiente y refleja oportunidades del producto.</span></div>
+            <div class="concept"><strong>Incremento</strong><span>Ofrece un resultado usable que aporta valor y cumple la Definición de Terminado.</span></div>
+            <div class="concept"><strong>Progreso</strong><span>Burn-up, burn-down o flujo pueden aportar contexto, sin reemplazar el diálogo.</span></div>
+          </div>
+          <button class="details-button" type="button" aria-expanded="false">¿Qué tener en cuenta? <span aria-hidden="true">＋</span></button>
+          <div class="details" hidden>
+            <p>Los indicadores son ayudas, no objetivos aislados. La velocidad, por ejemplo, es una medida de planificación del equipo y no debe usarse para comparar personas o equipos.</p>
+          </div>
+        </article>
+
+        <article class="branch branch-amber" id="branch-adaptation">
+          <div class="branch-heading">
+            <span class="branch-number">04</span>
+            <div>
+              <p class="node-kicker">APRENDER Y MEJORAR</p>
+              <h3>Adaptación del proyecto</h3>
+            </div>
+          </div>
+          <p class="branch-summary">Las observaciones conducen a cambios oportunos en el producto, el plan o la forma de trabajar.</p>
+          <div class="concept-list">
+            <div class="concept"><strong>Sprint Retrospective</strong><span>El equipo inspecciona calidad y efectividad, y acuerda mejoras.</span></div>
+            <div class="concept"><strong>Sprint Planning</strong><span>Define el Objetivo del Sprint y el plan para alcanzarlo.</span></div>
+            <div class="concept"><strong>Acción concreta</strong><span>Una mejora se incorpora al trabajo para comprobar su efecto.</span></div>
+          </div>
+          <button class="details-button" type="button" aria-expanded="false">¿Qué se adapta? <span aria-hidden="true">＋</span></button>
+          <div class="details" hidden>
+            <p>Si una inspección revela una desviación inaceptable, el ajuste debe hacerse cuanto antes. La adaptación no significa cambiar el Objetivo del Sprint de manera que ponga en riesgo el Sprint Goal.</p>
+          </div>
+        </article>
+      </div>
+  </main>
+
+  <footer class="page-footer">
+    <span>Scrum es un marco de trabajo empírico; los eventos crean oportunidades para inspeccionar y adaptar.</span>
+    <span>Conceptos basados en la Guía Scrum.</span>
+  </footer>
+</body>
+</html>
